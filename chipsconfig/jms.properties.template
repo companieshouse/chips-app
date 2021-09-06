@@ -105,7 +105,7 @@ filing.api.proxy.active=${FILING_API_PROXY_ACTIVE}
 filing.api.proxy.host=${FILING_API_PROXY_HOST}
 filing.api.proxy.port=${FILING_API_PROXY_PORT}
 
- #kafka props
+#kafka props
 filing.processed.url=${FILING_PROCESSED_URL}
 kafka.broker.addresses=${KAFKA_BROKER_ADDRESSES}
 kafka.schema.registry.url=${KAFKA_SCHEMA_REGISTRY_URL}
