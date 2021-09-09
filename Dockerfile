@@ -1,5 +1,4 @@
-#FROM 300288021642.dkr.ecr.eu-west-2.amazonaws.com/chips-domain
-FROM chips-domain
+FROM 300288021642.dkr.ecr.eu-west-2.amazonaws.com/chips-domain:1.0.1
 
 # Install gettext to provide envsubst
 USER root
@@ -17,7 +16,7 @@ COPY --chown=weblogic:weblogic container-scripts container-scripts/
 COPY --chown=weblogic:weblogic weblogic-*.tar ${DOMAIN_NAME}/upload/weblogic.tar
 COPY --chown=weblogic:weblogic chips-rest-interfaces-*.war ${DOMAIN_NAME}/upload/chips-rest-interfaces.war
 
-# Set permissions on utility scripts and create upload folder to receive the application artefacts 
+# Set permissions on utility scripts and expand the weblogic application artefact 
 USER weblogic
 RUN chmod 754 container-scripts/*.sh && \
     cd ${DOMAIN_NAME}/upload && \
