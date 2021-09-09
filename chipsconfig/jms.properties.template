@@ -1,0 +1,213 @@
+#
+# JMS Settings
+#
+jms.jndiContextFactory=${JMS_JNDICONTEXTFACTORY}
+jms.jndiProviderUrl=${JMS_JNDIPROVIDERURL}
+jms.queueConnectionFactoryName=${JMS_QUEUECONNECTIONFACTORYNAME}
+jms.staffwareQueue=${JMS_STAFFWAREQUEUE}
+jms.cedarQueue=${JMS_CEDARQUEUE}
+jms.officerEventQueue=${JMS_OFFICEREVENTQUEUE}
+jms.transactionListenerQueue=${JMS_TRANSACTIONLISTENERQUEUE}
+jms.efilingImageQueue=${JMS_EFILINGIMAGEQUEUE}
+jms.efilingShareholdingsQueue=${JMS_EFILINGSHAREHOLDINGSQUEUE}
+jms.printQueue=${JMS_PRINTQUEUE}
+jms.dissolutionCertificatesProducerQueue=${JMS_DISSOLUTIONCERTIFICATESPRODUCERQUEUE}
+jms.fesQueue=${JMS_FESQUEUE}
+jms.imageApiQueue=${JMS_IMAGEAPIQUEUE}
+jms.bulkImageLoadQueue=${JMS_BULKIMAGELOADQUEUE}
+jms.efilingImageErrorQueue=${JMS_EFILINGIMAGEERRORQUEUE}
+fes.tdf.allocation=${FES_TDF_ALLOCATION}
+#
+# Additional Staffware settings
+#
+staffware.enabled=${STAFFWARE_ENABLED}
+staffware.node=${STAFFWARE_NODE}
+staffware.hostname=${STAFFWARE_HOSTNAME}
+staffware.ipaddress=${STAFFWARE_IPADDRESS}
+staffware.ports=${STAFFWARE_PORTS}
+staffware.username=${STAFFWARE_USERNAME}
+staffware.password=${STAFFWARE_PASSWORD}
+staffware.user_offset=${STAFFWARE_USER_OFFSET}
+staffware.number_of_users=${STAFFWARE_NUMBER_OF_USERS}
+staffware.ipdetect=${STAFFWARE_IPDETECT}
+staffware.chipsdatasource=${STAFFWARE_CHIPSDATASOURCE}
+staffware.subscriptionqueue=${STAFFWARE_SUBSCRIPTIONQUEUE}
+jms.timeout=${JMS_TIMEOUT}
+jms.aqConnection=${JMS_AQCONNECTION}
+jms.aqname=${JMS_AQNAME}
+jms.aquser=${JMS_AQUSER}
+jms.aqpassword=${JMS_AQPASSWORD}
+jms.efilingQueue=${JMS_EFILINGQUEUE}
+jms.efilingRequestQueue=${JMS_EFILINGREQUESTQUEUE}
+jms.officerBulkQueue=${JMS_OFFICERBULKQUEUE}
+jms.aqenabled=${JMS_AQENABLED}
+staffware.adminuser=${STAFFWARE_ADMINUSER}
+#
+# EAI Callout Additions
+#
+jms.callerPrincipal=${JMS_CALLERPRINCIPAL}
+jms.aq.eai.connection=${JMS_AQ_EAI_CONNECTION}
+jms.aq.eai.queueName=${JMS_AQ_EAI_QUEUENAME}
+jms.aq.eai.user=${JMS_AQ_EAI_USER}
+jms.aq.eai.password=${JMS_AQ_EAI_PASSWORD}
+jms.aq.eai.enabled=${JMS_AQ_EAI_ENABLED}
+jms.aq.eai.retryDelay=${JMS_AQ_EAI_RETRYDELAY}
+#
+# Key Spring services IDs
+#
+spring.cfg.staffwareWorkflowDao=${SPRING_CFG_STAFFWAREWORKFLOWDAO}
+spring.cfg.jaffwareWorkflowService=${SPRING_CFG_JAFFWAREWORKFLOWSERVICE}
+spring.cfg.gazetteAckBean=${SPRING_CFG_GAZETTEACKBEAN}
+spring.cfg.eaiBeanWrapperId=${SPRING_CFG_EAIBEANWRAPPERID}
+
+jaffware.ThreadTeamSize=${JAFFWARE_THREADTEAMSIZE}
+
+#-------------------
+# CH Document API
+#--------------------
+#Use IP address until DNS lookup setup=
+image.api.url=${IMAGE_API_URL}
+image.api.health.check.url=${IMAGE_API_HEALTH_CHECK_URL}
+image.api.active=${IMAGE_API_ACTIVE}
+image.cloud.accesskeyid=${IMAGE_CLOUD_ACCESSKEYID}
+image.cloud.secretkey=${IMAGE_CLOUD_SECRETKEY}
+image.cloud.bucket=${IMAGE_CLOUD_BUCKET}
+image.cloud.endpoint=${IMAGE_CLOUD_ENDPOINT}
+image.cloud.proxy.host=${IMAGE_CLOUD_PROXY_HOST}
+image.cloud.proxy.port=${IMAGE_CLOUD_PROXY_PORT}
+image.cloud.proxy.protocol=${IMAGE_CLOUD_PROXY_PROTOCOL}
+send.ixbrl.to.cloud.disabled=${SEND_IXBRL_TO_CLOUD_DISABLED}
+send.image.to.cloud.disabled=${SEND_IMAGE_TO_CLOUD_DISABLED}
+image.api.cache.folder=${IMAGE_API_CACHE_FOLDER}
+image.api.bulk.wait.millis=${IMAGE_API_BULK_WAIT_MILLIS}
+image.api.bulk.tries=${IMAGE_API_BULK_TRIES}
+image.retrieval.accesskeyid=${IMAGE_RETRIEVAL_ACCESSKEYID}
+image.retrieval.secretkeyid=${IMAGE_RETRIEVAL_SECRETKEYID}
+image.retrieval.host.string=${IMAGE_RETRIEVAL_HOST_STRING}
+
+#Forms Enablement
+forms.api.response.active=${FORMS_API_RESPONSE_ACTIVE}
+forms.api.response.url=${FORMS_API_RESPONSE_URL}
+forms.api.auth.token=${FORMS_API_AUTH_TOKEN}
+forms.api.proxy.active=${FORMS_API_PROXY_ACTIVE}
+forms.api.proxy.host=${FORMS_API_PROXY_HOST}
+forms.api.proxy.port=${FORMS_API_PROXY_PORT}
+#
+# Text that will go on Menu Bar to highlight that environment is Live, or Test, or Batman, etc.
+#
+environment.label=${ENVIRONMENT_LABEL}
+
+#CHS
+filing.api.response.active=${FILING_API_RESPONSE_ACTIVE}
+filing.api.response.url=${FILING_API_RESPONSE_URL}
+filing.api.auth.token=${FILING_API_AUTH_TOKEN}
+filing.api.proxy.active=${FILING_API_PROXY_ACTIVE}
+filing.api.proxy.host=${FILING_API_PROXY_HOST}
+filing.api.proxy.port=${FILING_API_PROXY_PORT}
+
+#kafka props
+filing.processed.url=${FILING_PROCESSED_URL}
+kafka.broker.addresses=${KAFKA_BROKER_ADDRESSES}
+kafka.schema.registry.url=${KAFKA_SCHEMA_REGISTRY_URL}
+chs.kafka.api.service.url=${CHS_KAFKA_API_SERVICE_URL}
+
+#barcode properties moved from ApplicationConfigurator.properties
+barcode.service.enabled=${BARCODE_SERVICE_ENABLED}
+barcode.service.protocol=${BARCODE_SERVICE_PROTOCOL}
+barcode.service.host=${BARCODE_SERVICE_HOST}
+barcode.service.port=${BARCODE_SERVICE_PORT}
+barcode.service.connectTimeout=${BARCODE_SERVICE_CONNECTTIMEOUT }
+barcode.service.readTimeout=${BARCODE_SERVICE_READTIMEOUT }
+
+#image micro service
+image.service.url=${IMAGE_SERVICE_URL}
+image.service.readTimeout=${IMAGE_SERVICE_READTIMEOUT}
+image.service.connectTimeout=${IMAGE_SERVICE_CONNECTTIMEOUT}
+
+#Financial Sanction Search POC
+sanctionsSearch.service.protocol=${SANCTIONSSEARCH_SERVICE_PROTOCOL}
+sanctionsSearch.service.host=${SANCTIONSSEARCH_SERVICE_HOST}
+sanctionsSearch.service.connectTimeout=${SANCTIONSSEARCH_SERVICE_CONNECTTIMEOUT}
+sanctionsSearch.service.readTimeout=${SANCTIONSSEARCH_SERVICE_READTIMEOUT}
+
+#Restoration Calculator Service
+restoration.calculator.url=${RESTORATION_CALCULATOR_URL}
+restoration.calculator.readTimeout=${RESTORATION_CALCULATOR_READTIMEOUT}
+restoration.calculator.connectionTimeout=${RESTORATION_CALCULATOR_CONNECTIONTIMEOUT}
+
+#hide image service
+hide.image.service.client.enabled=${HIDE_IMAGE_SERVICE_CLIENT_ENABLED}
+hide.image.service.client.url=${HIDE_IMAGE_SERVICE_CLIENT_URL}
+hide.image.service.client.realmName=${HIDE_IMAGE_SERVICE_CLIENT_REALMNAME}
+hide.image.service.client.apiKey=${HIDE_IMAGE_SERVICE_CLIENT_APIKEY}
+hide.image.service.client.readTimeout=${HIDE_IMAGE_SERVICE_CLIENT_READTIMEOUT}
+hide.image.service.client.connectionTimeout=${HIDE_IMAGE_SERVICE_CLIENT_CONNECTIONTIMEOUT}
+hide.image.service.client.proxy.enabled=${HIDE_IMAGE_SERVICE_CLIENT_PROXY_ENABLED}
+hide.image.service.client.proxy.host=${HIDE_IMAGE_SERVICE_CLIENT_PROXY_HOST}
+hide.image.service.client.proxy.port=${HIDE_IMAGE_SERVICE_CLIENT_PROXY_PORT}
+
+#Sensitive Word Service
+sensitiveWord.api.url=${SENSITIVEWORD_API_URL}
+sensitiveWord.api.endpoint=${SENSITIVEWORD_API_ENDPOINT}
+sensitiveWord.api.key=${SENSITIVEWORD_API_KEY}
+sensitiveWord.api.connectTimeout=${SENSITIVEWORD_API_CONNECTTIMEOUT}
+sensitiveWord.api.readTimeout=${SENSITIVEWORD_API_READTIMEOUT}
+
+# HTTP Image Redaction Service
+image.redaction.service.client.url=${IMAGE_REDACTION_SERVICE_CLIENT_URL}
+image.redaction.service.client.readTimeout=${IMAGE_REDACTION_SERVICE_CLIENT_READTIMEOUT}
+image.redaction.service.client.connectionTimeout=${IMAGE_REDACTION_SERVICE_CLIENT_CONNECTIONTIMEOUT}
+image.redaction.service.client.apiKey=${IMAGE_REDACTION_SERVICE_CLIENT_APIKEY}
+image.redaction.service.external.application.viewer.url=${IMAGE_REDACTION_SERVICE_EXTERNAL_APPLICATION_VIEWER_URL}
+image.redaction.service.userOverride=${IMAGE_REDACTION_SERVICE_USEROVERRIDE}
+image.redaction.service.timeout=${IMAGE_REDACTION_SERVICE_TIMEOUT}
+image.redaction.service.decryption.key=${IMAGE_REDACTION_SERVICE_DECRYPTION_KEY}
+
+#Restricted Word Service
+restrictedWord.api.url=${RESTRICTEDWORD_API_URL}
+restrictedWord.api.endpoint=${RESTRICTEDWORD_API_ENDPOINT}
+restrictedWord.api.key=${RESTRICTEDWORD_API_KEY}
+restrictedWord.api.connectTimeout=${RESTRICTEDWORD_API_CONNECTTIMEOUT}
+restrictedWord.api.readTimeout=${RESTRICTEDWORD_API_READTIMEOUT}
+restrictedWord.api.super.restricted.endpoint=${RESTRICTEDWORD_API_SUPER_RESTRICTED_ENDPOINT}
+
+#Document Renderer Service
+document.renderer.service.url=${DOCUMENT_RENDERER_SERVICE_URL}
+document.renderer.service.readTimeout=${DOCUMENT_RENDERER_SERVICE_READTIMEOUT}
+document.renderer.service.connectionTimeout=${DOCUMENT_RENDERER_SERVICE_CONNECTIONTIMEOUT}
+document.renderer.service.auth.token=${DOCUMENT_RENDERER_SERVICE_AUTH_TOKEN}
+
+#Chips print partial URL
+chips.print.uri=${CHIPS_PRINT_URI}
+chips.print.src.url=${CHIPS_PRINT_SRC_URL}
+
+# Chips CH custom Fonts
+font.custom.names=${FONT_CUSTOM_NAMES}
+font.custom.path=${FONT_CUSTOM_PATH}
+
+# Default FES Org Unit ID - should no FES config for the transaction type/reg loc/corporate body type be found, place FES work item in this org unit
+fes.default.orgunit.id=${FES_DEFAULT_ORGUNIT_ID}
+
+jms.chipsGenericQueue=${JMS_CHIPSGENERICQUEUE}
+
+#Image OCR API Consumer
+image.ocr.api.consumer.url=${IMAGE_OCR_API_CONSUMER_URL}
+image.ocr.api.consumer.endpoint=${IMAGE_OCR_API_CONSUMER_ENDPOINT}
+image.ocr.api.consumer.key=${IMAGE_OCR_API_CONSUMER_KEY}
+image.ocr.api.consumer.connectTimeout=${IMAGE_OCR_API_CONSUMER_CONNECTTIMEOUT}
+image.ocr.api.consumer.readTimeout=${IMAGE_OCR_API_CONSUMER_READTIMEOUT}
+chips.ocr.image.servlet.endpoint=${CHIPS_OCR_IMAGE_SERVLET_ENDPOINT}
+chips.extracted.text.processing.endpoint=${CHIPS_EXTRACTED_TEXT_PROCESSING_ENDPOINT}
+chips.domain.url=${CHIPS_DOMAIN_URL}
+chips.rest.interface.domain.url=${CHIPS_REST_INTERFACE_DOMAIN_URL}
+
+#Image OCR Kafka Request
+image.ocr.request.url=${IMAGE_OCR_REQUEST_URL}
+image.ocr.request.endpoint=${IMAGE_OCR_REQUEST_ENDPOINT}
+image.ocr.request.connectTimeout=${IMAGE_OCR_REQUEST_CONNECTTIMEOUT}
+image.ocr.request.readTimeout=${IMAGE_OCR_REQUEST_READTIMEOUT}
+chips.ocr.image.servlet.endpoint=${CHIPS_OCR_IMAGE_SERVLET_ENDPOINT}
+chips.extracted.text.processing.endpoint=${CHIPS_EXTRACTED_TEXT_PROCESSING_ENDPOINT}
+chips.domain.url=${CHIPS_DOMAIN_URL}
+chips.rest.interface.domain.url=${CHIPS_REST_INTERFACE_DOMAIN_URL}
+chips.app.id.value=${CHIPS_APP_ID_VALUE}

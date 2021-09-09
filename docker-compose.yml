@@ -1,0 +1,58 @@
+version: "3.8"
+services:
+  apache:
+    hostname: apache
+    image: ${CHIPS_APACHE_IMAGE:-chips-apache:latest}
+    ports:
+      - "21000:80"
+      - "21001:81"
+    volumes:
+      - type: bind
+        source: ./running-servers
+        target: /usr/local/apache2/exportedlogs
+    networks:
+      - chips-net
+  wladmin:
+    hostname: wladmin
+    image: ${CHIPS_APP_IMAGE:-chips-app:latest}
+    ports:
+      - "21010:7001"
+    volumes:
+      - type: bind
+        source: ./running-servers
+        target: /apps/oracle/chipsdomain/servers
+    networks:
+      - chips-net
+    env_file: ./chips.properties
+    entrypoint: container-scripts/startAdmin.sh
+  wlserver1:
+    hostname: wlserver1
+    image: ${CHIPS_APP_IMAGE:-chips-app:latest}
+    ports:
+      - "21011:7001"
+    volumes:
+      - type: bind
+        source: ./running-servers
+        target: /apps/oracle/chipsdomain/servers
+      - type: bind
+        source: .
+        target: /apps/oracle/chipsdomain/CloudImages
+    networks:
+      - chips-net
+    env_file: ./chips.properties
+    entrypoint: container-scripts/applyEnvAndStartNodeManagerAndManagedServer.sh
+  sso1:
+    hostname: sso1
+    image: ${CHIPS_SSO_IMAGE:-chips-staffware-sso:latest}
+    volumes:
+      - type: bind
+        source: ./running-servers
+        target: /sso/logs
+    networks:
+      - chips-net
+    env_file: ./chips.properties
+    environment:
+      HOST_SERVER: wlserver1:7001
+    entrypoint: ./ssodaemon.sh
+networks:
+  chips-net:
