@@ -16,12 +16,13 @@ COPY --chown=weblogic:weblogic container-scripts container-scripts/
 COPY --chown=weblogic:weblogic weblogic-*.tar ${DOMAIN_NAME}/upload/weblogic.tar
 COPY --chown=weblogic:weblogic chips-rest-interfaces-*.war ${DOMAIN_NAME}/upload/chips-rest-interfaces.war
 
-# Set permissions on utility scripts and expand the weblogic application artefact 
+# Set permissions on utility scripts, expand the weblogic application artefact and create directories for volumes
 USER weblogic
 RUN chmod 754 container-scripts/*.sh && \
     cd ${DOMAIN_NAME}/upload && \
     tar -xvf weblogic.tar && \
     cp -r weblogic/* ../chipsconfig && \
-    rm ../chipsconfig/chips.ear
+    rm ../chipsconfig/chips.ear && \
+    mkdir ../CloudImages
 
 CMD ["bash"]
