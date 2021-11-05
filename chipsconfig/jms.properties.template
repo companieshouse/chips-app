@@ -2,7 +2,7 @@
 # JMS Settings
 #
 jms.jndiContextFactory=${JMS_JNDICONTEXTFACTORY}
-jms.jndiProviderUrl=${JMS_JNDIPROVIDERURL}
+jms.jndiProviderUrl=t3://${HOSTNAME}:7001
 jms.queueConnectionFactoryName=${JMS_QUEUECONNECTIONFACTORYNAME}
 jms.staffwareQueue=${JMS_STAFFWAREQUEUE}
 jms.cedarQueue=${JMS_CEDARQUEUE}
