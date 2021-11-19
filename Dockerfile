@@ -23,6 +23,7 @@ RUN chmod 754 container-scripts/*.sh && \
     tar -xvf weblogic.tar && \
     cp -r weblogic/* ../chipsconfig && \
     rm ../chipsconfig/chips.ear && \
-    mkdir ../CloudImages
+    mkdir ../CloudImages && \
+    mkdir ../EFAttachments
 
 CMD ["bash"]
