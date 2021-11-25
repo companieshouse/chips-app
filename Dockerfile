@@ -1,4 +1,4 @@
-FROM 300288021642.dkr.ecr.eu-west-2.amazonaws.com/chips-domain:1.0.7
+FROM 300288021642.dkr.ecr.eu-west-2.amazonaws.com/chips-domain:1.0.8
 
 # Install gettext to provide envsubst
 USER root
