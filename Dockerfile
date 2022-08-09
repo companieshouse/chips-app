@@ -1,10 +1,6 @@
-FROM 300288021642.dkr.ecr.eu-west-2.amazonaws.com/chips-domain:1.0.21
+FROM 300288021642.dkr.ecr.eu-west-2.amazonaws.com/chips-domain:1.0.24
 
-# Install gettext to provide envsubst
 USER root
-RUN yum -y install gettext && \
-    yum clean all && \
-    rm -rf /var/cache/yum
 
 # Copy over app specific chipsconfg
 COPY --chown=weblogic:weblogic chipsconfig ${DOMAIN_NAME}/chipsconfig/
