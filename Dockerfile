@@ -17,6 +17,7 @@ USER weblogic
 RUN chmod 754 container-scripts/*.sh && \
     cd ${DOMAIN_NAME}/upload && \
     tar -xvf weblogic.tar && \
+    mv weblogic/*.tif ../ && \
     cp -r weblogic/* ../chipsconfig && \
     rm ../chipsconfig/chips.ear && \
     mkdir ../CloudImages && \
