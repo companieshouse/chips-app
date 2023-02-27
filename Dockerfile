@@ -19,8 +19,6 @@ RUN cd ${DOMAIN_NAME}/upload && \
 
 FROM 300288021642.dkr.ecr.eu-west-2.amazonaws.com/chips-domain:1.0.29
 
-USER weblogic 
-
 # Copy over upload and chipsconfig
 COPY --from=builder --chown=weblogic:weblogic /apps/oracle/${DOMAIN_NAME}/upload ${DOMAIN_NAME}/upload/
 COPY --from=builder --chown=weblogic:weblogic /apps/oracle/${DOMAIN_NAME}/chipsconfig ${DOMAIN_NAME}/chipsconfig/
