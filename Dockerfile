@@ -1,26 +1,35 @@
-FROM 300288021642.dkr.ecr.eu-west-2.amazonaws.com/chips-domain:1.0.29
+FROM 300288021642.dkr.ecr.eu-west-2.amazonaws.com/chips-domain:1.0.29 as builder
 
 USER root
 
 # Copy over app specific chipsconfg
 COPY --chown=weblogic:weblogic chipsconfig ${DOMAIN_NAME}/chipsconfig/
 
-# Copy over utility scripts
-COPY --chown=weblogic:weblogic container-scripts container-scripts/
-
 # Copy over artefacts
 COPY --chown=weblogic:weblogic weblogic-*.tar ${DOMAIN_NAME}/upload/weblogic.tar
 COPY --chown=weblogic:weblogic chips-rest-interfaces-*.war ${DOMAIN_NAME}/upload/chips-rest-interfaces.war
 
-# Set permissions on utility scripts, expand the weblogic application artefact and create directories for volumes
+# Expand the weblogic application artefact
 USER weblogic
-RUN chmod 754 container-scripts/*.sh && \
-    cd ${DOMAIN_NAME}/upload && \
+RUN cd ${DOMAIN_NAME}/upload && \
     tar -xvf weblogic.tar && \
-    mv weblogic/*.tif ../ && \
     cp -r weblogic/* ../chipsconfig && \
     rm ../chipsconfig/chips.ear && \
-    mkdir ../CloudImages && \
-    mkdir ../EFAttachments
+    rm weblogic.tar
+
+FROM 300288021642.dkr.ecr.eu-west-2.amazonaws.com/chips-domain:1.0.29
+
+USER weblogic 
+
+# Copy over upload and chipsconfig
+COPY --from=builder --chown=weblogic:weblogic /apps/oracle/${DOMAIN_NAME}/upload ${DOMAIN_NAME}/upload/
+COPY --from=builder --chown=weblogic:weblogic /apps/oracle/${DOMAIN_NAME}/chipsconfig ${DOMAIN_NAME}/chipsconfig/
+
+# Copy over utility scripts
+COPY --chown=weblogic:weblogic container-scripts container-scripts/
+
+# Set permissions and move tif files into correct location
+RUN chmod 754 container-scripts/*.sh && \
+    mv ${DOMAIN_NAME}/upload/weblogic/*.tif ${DOMAIN_NAME}
 
 CMD ["bash"]
