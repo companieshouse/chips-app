@@ -28,6 +28,8 @@ COPY --chown=weblogic:weblogic container-scripts container-scripts/
 
 # Set permissions and move tif files into correct location
 RUN chmod 754 container-scripts/*.sh && \
+    mkdir ${DOMAIN_NAME}/CloudImages && \
+    mkdir ${DOMAIN_NAME}/EFAttachments && \
     mv ${DOMAIN_NAME}/upload/weblogic/*.tif ${DOMAIN_NAME}
 
 CMD ["bash"]
