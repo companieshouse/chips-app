@@ -28,6 +28,7 @@ In order to use the image, a number of environment properties need to be defined
 |AD_GROUP_BASE_DN|The base location under which groups can be found via a subtree search|OU=MySection, OU=MyOrg, DC=MyDepartment, DC=local
 |AUTO_START_NODES|A list of managed server names to auto start when the container is launched|wlserver1,wlserver2,wlserver3,wlserver4
 |TZ|The timezone to use when running WebLogic|Europe/London
+|APPLICATION_CONFIGURATOR_OVERRIDE_#|Override a property in the ApplicationConfigurator.properties file.  E.g. APPLICATION_CONFIGURATOR_OVERRIDE_#="property=value". Multiple overrides can be used as long as each has a unique suffix (normally a number)|APPLICATION_CONFIGURATOR_OVERRIDE_1="staffware.ip.override.value=COBWEBUNIX2" 
 
 
 In addition to these properties which are required for the use of the Docker image, there are also a large number of existing environment properties that are needed to run the CHIPS application.  These are described in https://github.com/companieshouse/chips/blob/develop/ENVIRONMENT_PROPERTIES_README.md and are also listed in this repository https://github.com/companieshouse/chips-app/blob/main/chipsconfig/jms.properties.template
