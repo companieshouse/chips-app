@@ -73,9 +73,10 @@ image.cloud.accesskeyid=${IMAGE_CLOUD_ACCESSKEYID}
 image.cloud.secretkey=${IMAGE_CLOUD_SECRETKEY}
 image.cloud.bucket=${IMAGE_CLOUD_BUCKET}
 image.cloud.endpoint=${IMAGE_CLOUD_ENDPOINT}
-image.cloud.proxy.host=${IMAGE_CLOUD_PROXY_HOST}
-image.cloud.proxy.port=${IMAGE_CLOUD_PROXY_PORT}
-image.cloud.proxy.protocol=${IMAGE_CLOUD_PROXY_PROTOCOL}
+# Proxy properties deliberately removed for cloud envs
+#image.cloud.proxy.host=${IMAGE_CLOUD_PROXY_HOST}
+#image.cloud.proxy.port=${IMAGE_CLOUD_PROXY_PORT}
+#image.cloud.proxy.protocol=${IMAGE_CLOUD_PROXY_PROTOCOL}
 send.ixbrl.to.cloud.disabled=${SEND_IXBRL_TO_CLOUD_DISABLED}
 send.image.to.cloud.disabled=${SEND_IMAGE_TO_CLOUD_DISABLED}
 image.api.cache.folder=${IMAGE_API_CACHE_FOLDER}
@@ -83,7 +84,8 @@ image.api.bulk.wait.millis=${IMAGE_API_BULK_WAIT_MILLIS}
 image.api.bulk.tries=${IMAGE_API_BULK_TRIES}
 image.retrieval.accesskeyid=${IMAGE_RETRIEVAL_ACCESSKEYID}
 image.retrieval.secretkeyid=${IMAGE_RETRIEVAL_SECRETKEYID}
-image.retrieval.host.string=${IMAGE_RETRIEVAL_HOST_STRING}
+# Proxy property deliberately removed for cloud envs
+#image.retrieval.host.string=${IMAGE_RETRIEVAL_HOST_STRING}
 
 #Forms Enablement
 forms.api.response.active=${FORMS_API_RESPONSE_ACTIVE}
