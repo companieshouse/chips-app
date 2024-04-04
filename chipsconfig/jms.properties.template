@@ -223,5 +223,12 @@ letter.producer.ecom.sync.retry.wait.time.ms=${LETTER_PRODUCER_ECOM_RETRY_WAIT_T
 file.transfer.api.key=${FILE_TRANSFER_API_KEY}
 file.transfer.api.url=${FILE_TRANSFER_API_URL}
 
+#Identity Verification API service
+identity.verification.api.url=${IDENTITY_VERIFICATION_API_URL}
+identity.verification.api.uvid.match.endpoint=${IDENTITY_VERIFICATION_API_UVID_MATCH_ENDPOINT}
+identity.verification.api.key=${IDENTITY_VERIFICATION_API_KEY}
+identity.verification.api.connectTimeout=${IDENTITY_VERIFICATION_API_CONNECTTIMEOUT}
+identity.verification.api.readTimeout=${IDENTITY_VERIFICATION_API_READTIMEOUT}
+
 # Feature flags 
 feature.flag.chips.trust.data.enabled=${FEATURE_FLAG_CHIPS_TRUST_DATA_ENABLED}
