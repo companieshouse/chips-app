@@ -132,6 +132,7 @@ sanctionsSearch.service.protocol=${SANCTIONSSEARCH_SERVICE_PROTOCOL}
 sanctionsSearch.service.host=${SANCTIONSSEARCH_SERVICE_HOST}
 sanctionsSearch.service.connectTimeout=${SANCTIONSSEARCH_SERVICE_CONNECTTIMEOUT}
 sanctionsSearch.service.readTimeout=${SANCTIONSSEARCH_SERVICE_READTIMEOUT}
+sanctionsSearch.service.api.key=${SANCTIONSSEARCH_SERVICE_API_KEY}
 
 #Restoration Calculator Service
 restoration.calculator.url=${RESTORATION_CALCULATOR_URL}
