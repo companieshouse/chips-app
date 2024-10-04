@@ -16,6 +16,7 @@ jms.fesQueue=${JMS_FESQUEUE}
 jms.imageApiQueue=${JMS_IMAGEAPIQUEUE}
 jms.bulkImageLoadQueue=${JMS_BULKIMAGELOADQUEUE}
 jms.efilingImageErrorQueue=${JMS_EFILINGIMAGEERRORQUEUE}
+jms.acspUsersQueue=${JMS_ACSPUSERSQUEUE}
 fes.tdf.allocation=${FES_TDF_ALLOCATION}
 #
 # Additional Staffware settings
@@ -230,6 +231,12 @@ identity.verification.api.uvid.match.endpoint=${IDENTITY_VERIFICATION_API_UVID_M
 identity.verification.api.key=${IDENTITY_VERIFICATION_API_KEY}
 identity.verification.api.connectTimeout=${IDENTITY_VERIFICATION_API_CONNECTTIMEOUT}
 identity.verification.api.readTimeout=${IDENTITY_VERIFICATION_API_READTIMEOUT}
+
+#ACSP manage users API Service
+acsp.manage.users.api.url=${ACSP_MANAGE_USERS_API_URL}
+acsp.manage.users.api.key=${ACSP_MANAGE_USERS_API_KEY}
+acsp.manage.users.api.connectTimeout=${ACSP_MANAGE_USERS_API_CONNECTTIMEOUT}
+acsp.manage.users.api.readTimeout=${ACSP_MANAGE_USERS_API_READTIMEOUT}
 
 # Feature flags 
 feature.flag.chips.trust.data.enabled=${FEATURE_FLAG_CHIPS_TRUST_DATA_ENABLED}
