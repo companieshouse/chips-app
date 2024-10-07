@@ -4,7 +4,6 @@
 jms.jndiContextFactory=${JMS_JNDICONTEXTFACTORY}
 jms.jndiProviderUrl=t3://${HOSTNAME}:7001
 jms.queueConnectionFactoryName=${JMS_QUEUECONNECTIONFACTORYNAME}
-fes.tdf.allocation=${FES_TDF_ALLOCATION}
 #
 # Queue names
 #
@@ -196,6 +195,7 @@ font.custom.path=${FONT_CUSTOM_PATH}
 
 # Default FES Org Unit ID - should no FES config for the transaction type/reg loc/corporate body type be found, place FES work item in this org unit
 fes.default.orgunit.id=${FES_DEFAULT_ORGUNIT_ID}
+fes.tdf.allocation=${FES_TDF_ALLOCATION}
 
 #Image OCR API Consumer
 image.ocr.api.consumer.url=${IMAGE_OCR_API_CONSUMER_URL}
