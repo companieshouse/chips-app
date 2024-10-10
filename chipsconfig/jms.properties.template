@@ -4,6 +4,9 @@
 jms.jndiContextFactory=${JMS_JNDICONTEXTFACTORY}
 jms.jndiProviderUrl=t3://${HOSTNAME}:7001
 jms.queueConnectionFactoryName=${JMS_QUEUECONNECTIONFACTORYNAME}
+#
+# Queue names
+#
 jms.staffwareQueue=${JMS_STAFFWAREQUEUE}
 jms.cedarQueue=${JMS_CEDARQUEUE}
 jms.officerEventQueue=${JMS_OFFICEREVENTQUEUE}
@@ -16,7 +19,11 @@ jms.fesQueue=${JMS_FESQUEUE}
 jms.imageApiQueue=${JMS_IMAGEAPIQUEUE}
 jms.bulkImageLoadQueue=${JMS_BULKIMAGELOADQUEUE}
 jms.efilingImageErrorQueue=${JMS_EFILINGIMAGEERRORQUEUE}
-fes.tdf.allocation=${FES_TDF_ALLOCATION}
+jms.efilingQueue=${JMS_EFILINGQUEUE}
+jms.efilingRequestQueue=${JMS_EFILINGREQUESTQUEUE}
+jms.officerBulkQueue=${JMS_OFFICERBULKQUEUE}
+jms.chipsGenericQueue=${JMS_CHIPSGENERICQUEUE}
+jms.acspUsersQueue=${JMS_ACSPUSERSQUEUE}
 #
 # Additional Staffware settings
 #
@@ -37,9 +44,6 @@ jms.aqConnection=${JMS_AQCONNECTION}
 jms.aqname=${JMS_AQNAME}
 jms.aquser=${JMS_AQUSER}
 jms.aqpassword=${JMS_AQPASSWORD}
-jms.efilingQueue=${JMS_EFILINGQUEUE}
-jms.efilingRequestQueue=${JMS_EFILINGREQUESTQUEUE}
-jms.officerBulkQueue=${JMS_OFFICERBULKQUEUE}
 jms.aqenabled=${JMS_AQENABLED}
 staffware.adminuser=${STAFFWARE_ADMINUSER}
 #
@@ -191,8 +195,7 @@ font.custom.path=${FONT_CUSTOM_PATH}
 
 # Default FES Org Unit ID - should no FES config for the transaction type/reg loc/corporate body type be found, place FES work item in this org unit
 fes.default.orgunit.id=${FES_DEFAULT_ORGUNIT_ID}
-
-jms.chipsGenericQueue=${JMS_CHIPSGENERICQUEUE}
+fes.tdf.allocation=${FES_TDF_ALLOCATION}
 
 #Image OCR API Consumer
 image.ocr.api.consumer.url=${IMAGE_OCR_API_CONSUMER_URL}
@@ -230,6 +233,12 @@ identity.verification.api.uvid.match.endpoint=${IDENTITY_VERIFICATION_API_UVID_M
 identity.verification.api.key=${IDENTITY_VERIFICATION_API_KEY}
 identity.verification.api.connectTimeout=${IDENTITY_VERIFICATION_API_CONNECTTIMEOUT}
 identity.verification.api.readTimeout=${IDENTITY_VERIFICATION_API_READTIMEOUT}
+
+#ACSP manage users API Service
+acsp.manage.users.api.url=${ACSP_MANAGE_USERS_API_URL}
+acsp.manage.users.api.key=${ACSP_MANAGE_USERS_API_KEY}
+acsp.manage.users.api.connectTimeout=${ACSP_MANAGE_USERS_API_CONNECTTIMEOUT}
+acsp.manage.users.api.readTimeout=${ACSP_MANAGE_USERS_API_READTIMEOUT}
 
 # Feature flags 
 feature.flag.chips.trust.data.enabled=${FEATURE_FLAG_CHIPS_TRUST_DATA_ENABLED}
