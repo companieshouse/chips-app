@@ -1,4 +1,4 @@
-FROM 300288021642.dkr.ecr.eu-west-2.amazonaws.com/chips-domain:1.0.57 AS builder
+FROM 300288021642.dkr.ecr.eu-west-2.amazonaws.com/chips-domain:1.0.58 AS builder
 
 USER root
 
@@ -17,7 +17,7 @@ RUN cd ${DOMAIN_NAME}/upload && \
     rm ../chipsconfig/chips.ear && \
     rm weblogic.tar
 
-FROM 300288021642.dkr.ecr.eu-west-2.amazonaws.com/chips-domain:1.0.57
+FROM 300288021642.dkr.ecr.eu-west-2.amazonaws.com/chips-domain:1.0.58
 
 # Copy over upload and chipsconfig
 COPY --from=builder --chown=weblogic:weblogic /apps/oracle/${DOMAIN_NAME}/upload ${DOMAIN_NAME}/upload/
