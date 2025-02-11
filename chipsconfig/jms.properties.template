@@ -8,12 +8,10 @@ jms.queueConnectionFactoryName=${JMS_QUEUECONNECTIONFACTORYNAME}
 # Queue names
 #
 jms.staffwareQueue=${JMS_STAFFWAREQUEUE}
-jms.cedarQueue=${JMS_CEDARQUEUE}
 jms.officerEventQueue=${JMS_OFFICEREVENTQUEUE}
 jms.transactionListenerQueue=${JMS_TRANSACTIONLISTENERQUEUE}
 jms.efilingImageQueue=${JMS_EFILINGIMAGEQUEUE}
 jms.efilingShareholdingsQueue=${JMS_EFILINGSHAREHOLDINGSQUEUE}
-jms.printQueue=${JMS_PRINTQUEUE}
 jms.dissolutionCertificatesProducerQueue=${JMS_DISSOLUTIONCERTIFICATESPRODUCERQUEUE}
 jms.fesQueue=${JMS_FESQUEUE}
 jms.imageApiQueue=${JMS_IMAGEAPIQUEUE}
