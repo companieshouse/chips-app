@@ -247,3 +247,4 @@ chips.word.api.readTimeout=${CHIPS_WORD_API_READTIMEOUT}
 # Feature flags 
 feature.flag.chips.trust.data.enabled=${FEATURE_FLAG_CHIPS_TRUST_DATA_ENABLED}
 feature.flag.chips.route.ni.psc.discrepancies=${FEATURE_FLAG_CHIPS_ROUTE_NI_PSC_DISCREPANCIES}
+feature.flag.chips.psc.stop.comms.enabled=${FEATURE_FLAG_CHIPS_PSC_STOP_COMMS_ENABLED}
