@@ -120,6 +120,7 @@ chs.kafka.api.email.service.url=${CHS_KAFKA_API_EMAIL_SERVICE_URL}
 barcode.service.enabled=${BARCODE_SERVICE_ENABLED}
 barcode.service.protocol=${BARCODE_SERVICE_PROTOCOL}
 barcode.service.host=${BARCODE_SERVICE_HOST}
+barcode.service.path=${BARCODE_SERVICE_PATH}
 barcode.service.port=${BARCODE_SERVICE_PORT}
 barcode.service.connectTimeout=${BARCODE_SERVICE_CONNECTTIMEOUT }
 barcode.service.readTimeout=${BARCODE_SERVICE_READTIMEOUT }
