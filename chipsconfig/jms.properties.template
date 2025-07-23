@@ -260,3 +260,6 @@ accounts.suppression.api.key=${ACCOUNTS_SUPPRESSION_API_KEY}
 # When disabled, the link is not visible on the company transaction details screen.
 # When enabled, the link is visible.
 feature.flag.ixbrl.suppression=${FEATURE_FLAG_IXBRL_SUPPRESSION}
+
+# Allow list for on behalf of service users
+onbehalfof.allowed.users=${ALLOWED_USERS}
