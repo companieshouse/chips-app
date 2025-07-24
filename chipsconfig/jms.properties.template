@@ -253,13 +253,10 @@ feature.flag.chips.route.ni.psc.discrepancies=${FEATURE_FLAG_CHIPS_ROUTE_NI_PSC_
 # Accounts suppression url
 redact.xbrl.url=${REDACT_XBRL_URL}
 
-# API key used for accounts suppression endpoints
-accounts.suppression.api.key=${ACCOUNTS_SUPPRESSION_API_KEY}
-
 # Set feature.flag.ixbrl.suppression to false to hide the 'Redact XBRL' link.
 # When disabled, the link is not visible on the company transaction details screen.
 # When enabled, the link is visible.
 feature.flag.ixbrl.suppression=${FEATURE_FLAG_IXBRL_SUPPRESSION}
 
 # Allow list for on behalf of service users
-onbehalfof.allowed.users=${ALLOWED_USERS}
+onbehalfof.allowed.users=${ONBEHALFOF_ALLOWED_USERS}
