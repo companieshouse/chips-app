@@ -260,3 +260,6 @@ feature.flag.ixbrl.suppression=${FEATURE_FLAG_IXBRL_SUPPRESSION}
 
 # Allow list for on behalf of service users
 onbehalfof.allowed.users=${ONBEHALFOF_ALLOWED_USERS}
+
+chs.notification.api.base.url=${CHS_NOTIFICATION_API_BASE}
+chs.notification.api.auth.key=${CHS_NOTIFICATION_API_AUTH_KEY}
