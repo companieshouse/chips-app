@@ -263,3 +263,7 @@ onbehalfof.allowed.users=${ONBEHALFOF_ALLOWED_USERS}
 
 chs.notification.api.base.url=${CHS_NOTIFICATION_API_BASE_URL}
 chs.notification.api.auth.key=${CHS_NOTIFICATION_API_AUTH_KEY}
+
+# Stop comms feature flag
+feature.flag.chips.psc.stop.comms.enabled=${FEATURE_FLAG_CHIPS_PSC_STOP_COMMS_ENABLED}
+
