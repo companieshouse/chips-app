@@ -267,3 +267,5 @@ chs.notification.api.auth.key=${CHS_NOTIFICATION_API_AUTH_KEY}
 # Stop comms feature flag
 feature.flag.chips.psc.stop.comms.enabled=${FEATURE_FLAG_CHIPS_PSC_STOP_COMMS_ENABLED}
 
+# PSC Directions Letter feature flag
+feature.flag.chips.psc.directions.letter.enabled=${FEATURE_FLAG_CHIPS_PSC_DIRECTIONS_LETTER_ENABLED}
