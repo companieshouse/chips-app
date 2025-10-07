@@ -258,8 +258,8 @@ redact.xbrl.url=${REDACT_XBRL_URL}
 # When enabled, the link is visible.
 feature.flag.ixbrl.suppression=${FEATURE_FLAG_IXBRL_SUPPRESSION}
 
-# Allow list for on behalf of service users
-onbehalfof.allowed.users=${ONBEHALFOF_ALLOWED_USERS}
+# List of authenticated users that require onbehalfof user
+onbehalfof.required.users=${ONBEHALFOF_REQUIRED_USERS}
 
 chs.notification.api.base.url=${CHS_NOTIFICATION_API_BASE_URL}
 chs.notification.api.auth.key=${CHS_NOTIFICATION_API_AUTH_KEY}
