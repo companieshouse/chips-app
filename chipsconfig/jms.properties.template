@@ -247,8 +247,8 @@ chips.word.api.readTimeout=${CHIPS_WORD_API_READTIMEOUT}
 
 # URA security properties for URASecurityImpl
 ura.security.cipher=${URA_SECURITY_CIPHER}
-ura.security.key=${URA_SECURITY_KEY}
-ura.security.check=${URA_SECURITY_CHECK}
+ura.security.base64.key=${URA_SECURITY_BASE64_KEY}
+ura.security.base64.check=${URA_SECURITY_BASE64_CHECK}
 
 # Feature flags 
 feature.flag.chips.trust.data.enabled=${FEATURE_FLAG_CHIPS_TRUST_DATA_ENABLED}
