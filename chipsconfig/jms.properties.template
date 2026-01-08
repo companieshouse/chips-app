@@ -268,8 +268,15 @@ onbehalfof.required.users=${ONBEHALFOF_REQUIRED_USERS}
 # Workaround to allow existing code to work that references the old property name
 onbehalfof.allowed.users=${ONBEHALFOF_ALLOWED_USERS}
 
+# CHS Notification Sender Service
 chs.notification.api.base.url=${CHS_NOTIFICATION_API_BASE_URL}
 chs.notification.api.auth.key=${CHS_NOTIFICATION_API_AUTH_KEY}
+
+# Gov UK Notify integration service
+chs.gov.uk.notify.integration.api.url=${CHS_GOV_UK_NOTIFY_INTEGRATION_API_URL}
+chs.gov.uk.notify.integration.api.key=${CHS_GOV_UK_NOTIFY_INTEGRATION_API_KEY}
+chs.gov.uk.notify.integration.api.connectTimeout=${CHS_GOV_UK_NOTIFY_INTEGRATION_API_CONNECTTIMEOUT}
+chs.gov.uk.notify.integration.api.readTimeout=${CHS_GOV_UK_NOTIFY_INTEGRATION_API_READTIMEOUT}
 
 # Stop comms feature flag
 feature.flag.chips.psc.stop.comms.enabled=${FEATURE_FLAG_CHIPS_PSC_STOP_COMMS_ENABLED}
