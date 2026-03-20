@@ -283,3 +283,7 @@ feature.flag.chips.psc.stop.comms.enabled=${FEATURE_FLAG_CHIPS_PSC_STOP_COMMS_EN
 
 # PSC Directions Letter feature flag
 feature.flag.chips.psc.directions.letter.enabled=${FEATURE_FLAG_CHIPS_PSC_DIRECTIONS_LETTER_ENABLED}
+
+# TEST DATA feature flag and API key for CHS internal API to allow test data to be added to company records in non-prod environments
+feature.flag.test.data.company.enabled=${FEATURE_FLAG_TEST_DATA_COMPANY_ENABLED}
+chs.test.data.api.auth.key=${CHS_TEST_DATA_API_AUTH_KEY}
