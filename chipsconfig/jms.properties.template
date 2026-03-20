@@ -285,4 +285,4 @@ feature.flag.chips.psc.stop.comms.enabled=${FEATURE_FLAG_CHIPS_PSC_STOP_COMMS_EN
 feature.flag.chips.psc.directions.letter.enabled=${FEATURE_FLAG_CHIPS_PSC_DIRECTIONS_LETTER_ENABLED}
 
 # REST API
-chips.rest.api.max.list.size.limit=${CHIPS_REST_API_MAX_LIST_SIZE_LIMIT}
+chips.rest.api.max.list.size=${CHIPS_REST_API_MAX_LIST_SIZE}
