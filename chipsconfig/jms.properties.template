@@ -117,6 +117,9 @@ chs.kafka.api.service.url=${CHS_KAFKA_API_SERVICE_URL}
 chs.kafka.api.service.apikey=${CHS_KAFKA_API_SERVICE_APIKEY}
 chs.kafka.api.email.service.url=${CHS_KAFKA_API_EMAIL_SERVICE_URL}
 
+chs.kafka.api.objections.service.url=${CHS_KAFKA_API_OBJECTIONS_SERVICE_URL}
+chs.kafka.api.objections.service.apikey=${CHS_KAFKA_API_OBJECTIONS_SERVICE_APIKEY}
+
 #barcode properties moved from ApplicationConfigurator.properties
 barcode.service.enabled=${BARCODE_SERVICE_ENABLED}
 barcode.service.protocol=${BARCODE_SERVICE_PROTOCOL}
