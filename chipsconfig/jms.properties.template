@@ -120,6 +120,9 @@ chs.kafka.api.email.service.url=${CHS_KAFKA_API_EMAIL_SERVICE_URL}
 chs.kafka.api.objections.service.url=${CHS_KAFKA_API_OBJECTIONS_SERVICE_URL}
 chs.kafka.api.objections.service.apikey=${CHS_KAFKA_API_OBJECTIONS_SERVICE_APIKEY}
 
+#chips-rest-interface api-key used for validating strike-off-partner-objections
+chips.rest.interface.api.key=${CHIPS_REST_INTERFACE_API_KEY}
+
 #barcode properties moved from ApplicationConfigurator.properties
 barcode.service.enabled=${BARCODE_SERVICE_ENABLED}
 barcode.service.protocol=${BARCODE_SERVICE_PROTOCOL}
