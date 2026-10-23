@@ -115,7 +115,6 @@ kafka.broker.addresses=${KAFKA_BROKER_ADDRESSES}
 kafka.schema.registry.url=${KAFKA_SCHEMA_REGISTRY_URL}
 chs.kafka.api.service.url=${CHS_KAFKA_API_SERVICE_URL}
 chs.kafka.api.service.apikey=${CHS_KAFKA_API_SERVICE_APIKEY}
-chs.kafka.api.email.service.url=${CHS_KAFKA_API_EMAIL_SERVICE_URL}
 
 chs.kafka.api.objections.service.url=${CHS_KAFKA_API_OBJECTIONS_SERVICE_URL}
 chs.kafka.api.objections.service.apikey=${CHS_KAFKA_API_OBJECTIONS_SERVICE_APIKEY}
