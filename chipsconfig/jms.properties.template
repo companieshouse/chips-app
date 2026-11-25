@@ -69,6 +69,7 @@ jaffware.ThreadTeamSize=${JAFFWARE_THREADTEAMSIZE}
 #--------------------
 #Use IP address until DNS lookup setup=
 image.api.url=${IMAGE_API_URL}
+image.api.key=${IMAGE_API_KEY}
 image.api.health.check.url=${IMAGE_API_HEALTH_CHECK_URL}
 image.api.active=${IMAGE_API_ACTIVE}
 image.cloud.accesskeyid=${IMAGE_CLOUD_ACCESSKEYID}
